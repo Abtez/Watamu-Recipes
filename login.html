@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src=""></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="login.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
         <link rel="stylesheet" href="login.css" type="text/css">
         <title>Login and registration</title>
     </head>
     <body>
-        <form action="" id="loginForm">
-            <h3>Login to your account</h3>
-            <div class="form-group">
-                <input type="email" class="form-control-lg" name="account" id="useremail" placeholder="email">
+        <div class="container" id="container">
+            <div class="form-group sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="emailchange">or use your email</span>
+                    <input type="text" class="form-control" placeholder="Name" />
+                    <input type="email" class="form-control" placeholder="Email" />
+                    <input type="password" class="form-control" placeholder="Password" />
+                    <button class="btn bg-success">Sign Up</button>
+                </form>
             </div>
-            <div class="form-group">    
-                <input type="text" class="form-control-lg" name="username" id="username" placeholder="user name">
+    
+            <div class="form-group sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" class="form-control" placeholder="Email" />
+                    <input type="password" class="form-control" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button class="btn bg-success">Sign In</button>
+                </form>
             </div>
-            <div class="form-group">    
-                <input type="password" class="form-control-lg" name="userpassword" id="userpassword" placeholder="password">
-            </div>    
-            <button type="submit" class="btn bg-success">Log in</button>    
-        </form>
+    
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>
+                            To keep connected with us please login with your personal info
+                        </p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <script src="main.js"></script>
     </body>
+    
 </html>
