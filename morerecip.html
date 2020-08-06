@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -56,58 +55,182 @@
     </div>
 
     <div class="container-fluid">
-        <h1>FEATURING</h1>
-        <div class="card-deck mt-5">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="featuring"><h1 class="mt-5 text-center">HEALTHIEST MENU</h1></div>
+        <div class="d-flex justify-content-around">
+          <div class="row">
+            <div class="col-md-4 col-sm4">
+            <div class="card bg-success">
+              <img class="card-img-top img-fluid" src="/image/porig.jpg" alt="porig">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title ">breakfast of the day<br><small>healthy porridge bowl</small></h5>
+                <p class="card-text">Start your day right with this filling bowl of oats, berries, banana and seeds. It's healthy and packed with nutrients to fuel body and mind</p>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+              <ul class="list-group list-group-flush healthiest">
+                <li class="list-group-item">BREAKFAST</li>
+                <li class="list-group-item">serve 2</li>
+                <li class="list-group-item">beginner</li>
+                <li style="display: none;" id="brekporg" class="list-group-item">INGRIDIENTS <br><br>100g frozen raspberries <br>
+
+                  1 orange
+                  
+                  , ½ sliced and ½ juiced <br>
+                  150g porridge oats <br>
+                  100ml milk <br>
+                  
+                  ½ banana
+                  
+                  , sliced <br>
+                  2 tbsp smooth almond butter <br>
+                  1 tbsp goji berries <br>
+                  
+                  1 tbsp chia seeds</li>
+                <li style="display: none;" id="porig" class="list-group-item">METHOD<br>1. Tip half the raspberries and all of the orange juice 
+                  in a pan. Simmer until the raspberries soften, about 5 mins.
+
+                  2. Meanwhile stir the oats, milk and 450ml water in a pan over a low heat until creamy. Top with the 
+                  raspberry compote, remaining raspberries, orange slices, banana, almond butter, goji berries and chia seeds.</li>
               </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+              <div class="d-flex justify-content-around card-body">
+              <button class="btn btn-info" id="bowl">ingridients</button>
+                <button class="btn btn-info" id="porigshow">preparation</button>
+                <button id="" class="btn btn-info"><i class="fa fa-download"></i> save</button>
               </div>
             </div>
-            
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
             </div>
             
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="col-md-4 col-sm4">
+            <div class="card bg-success">
+              <img class="card-img-top img-fluid" src="/image/salunch.jpg" alt="bbq salad">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">lunch of the day <br><small> bbq beef salad</small></h5>
+                <p class="card-text">The steak in this light salad is cooked on the barbecue, giving 
+                  it a true taste of summer. It works brilliantly with our Asian-inspired dressing</p>
+              </div>
+              <ul class="list-group list-group-flush healthiest">
+                <li class="list-group-item">LUNCH</li>
+                <li class="list-group-item">serves 6</li>
+                <li class="list-group-item">beginner</li>
+                <li id="bbqsalad" style="display: none;" class="list-group-item">INGREDIENTS<br>2 x 250g sirloin sirloin steaks
+
+                   fat trimmed <br>
+                  thumb-sized piece ginger
+                  
+                  , finely grated <br>
+                  1 garlic clove, finely grated <br>
+                  2 limes
+                  
+                  , juiced <br>
+                  2 tbsp sesame oil <br>
+                  1 tbsp low-salt soy sauce <br>
+                  
+                  3 red bird’s eye chillies, 2 finely chopped, 1 finely sliced <br>
+                  4 Little Gem lettuces <br>
+                  12 radishes 
+                  
+                  , thinly sliced <br>
+                  3 carrots
+                  
+                  , peeled and finely sliced <br>
+                  ½ cucumber, cut into ribbons using a peeler <br>
+                  3 spring onions 
+                  
+                  , finely sliced <br>
+                  1 large ripe avocado 
+                  
+                  , sliced <br>
+                  ½ tbsp mixed sesame seed</li>
+                  <li id="bbq" style="display: none;" class="list-group-item">PREPARATION <br> <br> Remove the steak from the fridge 1 hr 
+                    before you’re ready to cook to bring it up to room temperature. Just before cooking, 
+                    make the salad dressing by whisking together the ginger, garlic, lime juice, oil,
+                     soy and chopped chillies in a bowl. <br><br>
+
+                    Put the steaks on the barbecue and cook on one side for 3 mins, then turn and cook
+                     for 3 mins on the other side for medium rare. Alternatively, fry your steaks in a 
+                     frying pan or griddle pan for 3 mins each side. After cooking, cover and rest the
+                      meat for 5 mins. <br><br>
+                    
+                    Arrange the lettuce leaves, radishes, carrot, cucumber, spring onion and avocado
+                     on a sharing plate. Slice the steak against the grain into thin slices and lay on 
+                     top of the salad. Drizzle over any resting juices and the dressing. Garnish with 
+                     the sesame seeds and the sliced red chilli.</li>
+              </ul>
+              <div class="card-body d-flex justify-content-around">
+              <button id="bbqingr" class="btn btn-info">ingridients</button>
+              <button id="bbqsaladshow" class="btn btn-info">preparation</button>
+              <button id="" class="btn btn-info"><i class="fa fa-download"></i> save</button>
+              </div>
+            </div>
+            </div>
+            
+            <div class="col-md-4 col-sm4">
+            <div class="card bg-success">
+              <img class="card-img-top img-fluid" src="/image/dinner.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">dinner of the day <br><small>Vegetable tagine with apricot quinoa</small></h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+              <ul class="list-group list-group-flush healthiest">
+                <li class="list-group-item">DINNER</li>
+                <li class="list-group-item">serve 4</li>
+                <li class="list-group-item">beginner</li>
+                <li style="display: none;" id="diningr" class="list-group-item">INGRIDIENTS <br>For the tagine <br>
+                  1 tsp coconut oil or olive oil <br>
+                  1 red onion, chopped <br>
+                  2 garlic cloves, crushed <br>
+                  ½ butternut squash (500g), chopped into large chunks <br>
+                  2 red peppers, chopped <br>
+                  400g can chickpeas, drained <br>
+                  400g can chopped tomatoes
+                  500ml vegan vegetable stock (such as Marigold Vegan Bouillon Powder) <br>
+                  1 tsp ground cinnamon <br>
+                  1 tsp ground cumin <br>
+                  2 tsp turmeric <br>
+                  
+                  2 tsp paprika <br>
+                  
+                  small bunch coriander, chopped
+                  small bunch mint <br>
+                  
+                  , chopped, plus extra to serve
+                  pomegranate seeds, to serve (optional) <br>
+                  For the apricot quinoa <br>
+                  280g quinoa <br>
+                  
+                  80g dried apricots, chopped <br>
+                  20g flaked almonds, toasted <br>
+                  For the dressing <br>
+                  4 tbsp tahini <br>
+                  
+                  2 tsp preserved lemon, finely chopped, plus 2 tsp liquid from the jar <br>
+                  6 tbsp almond milk</li>
+                <li style="display: none;" id="dinprep" class="list-group-item">PREPARATION <br> Heat the oil in a large frying pan and
+                   fry the onion over a medium heat for 3 mins. Add the garlic and butternut squash,
+                    and cook for a further 7 mins. <br> <br>
+
+                  Add the remaining vegetables and continue to fry for 3 mins before adding the 
+                  chickpeas, tomatoes and stock, along with the spices and seasoning. Simmer for
+                   30 mins, uncovered. Meanwhile, put 750ml water in a small saucepan, bring to a 
+                   simmer, then add the quinoa and cook for 20 mins. When cooked, stir in the 
+                   apricots and almonds, plus a pinch of salt. <br> <br>
+                  
+                  To make the tahini dressing, whisk together all the ingredients in a small bowl.
+                   Season with a pinch of salt. <br> <br>
+                  
+                  Serve the quinoa with the tagine, and drizzle the tahini dressing over the top. 
+                  Scatter over some chopped coriander and mint and the pomegranate seeds, if using,
+                   to finish.</li>
+
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <div class="card-body d-flex justify-content-around">
+                  <button id="dinnshow" class="btn btn-info">ingridients</button>
+                  <button id="dinnershow" class="btn btn-info">preparation</button>
+                  <button id="" class="btn btn-info"><i class="fa fa-download"></i> save</button>
+                  </div>
               </div>
             </div>
+             </div>
+          </div>
             </div>
 
             <div class="card mt-4">
@@ -1215,9 +1338,10 @@
     
 
 
-
-    <script src="/morerecip.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/morerecip.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
