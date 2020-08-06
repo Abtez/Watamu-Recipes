@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#btn-oat").click(function(){
-        $("#oatingr").toggle.("#card1")()
+        $("#oatingr").toggle()
     })
     $("#btn-oatprep").click(function(){
         $("#oatprep").toggle()
