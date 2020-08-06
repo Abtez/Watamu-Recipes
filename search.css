@@ -19,7 +19,7 @@ i{
 }
 input{
     padding: 20px;
-    border: none;
+    border: medium;
     border-radius: 50px;
     width: 15px;
     transition-duration: .5s;
