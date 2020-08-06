@@ -20,6 +20,10 @@ signupform.addEventListener('submit', (e) => {
         messages.push('password cannnot be password')
     }
 
+    if (password.value != passwordconfirm.value) {
+        messages.push('Passwords do not match')
+    }
+
     if (messages.length > 0) {
     e.preventDefault();
     errorDisplay.innerText = messages.join(', ')
