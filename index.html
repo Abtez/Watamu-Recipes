@@ -1,38 +1,104 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 </head>
+<style>
+    body {
+        background-color: rgb(41, 40, 40);
+    }
+    
+    .logo {
+        margin-top: 80px;
+        flex-basis: 50%;
+        display: flex;
+    }
+    
+    .logo h2 {
+        font-size: 70px;
+    }
+    
+    .logo h5 {
+        font-size: 35px;
+    }
+    
+    span {
+        color: green;
+    }
+    
+    .carousel {
+        display: flex;
+        float: right;
+        margin-top: -450px;
+    }
+</style>
+
 <body>
 
     <div class="container">
+        <div class="logo" id="logo" style="text-align: center ; color: whitesmoke;">
+            <div class="col col-lg-3 col-md-3 col-sm-6">
+                <p>
+                    <h2><span>WATAMU</span> RECIPES</h2>
+                </p>
+                <br>
+                <h5> Simply<span> the best</span> </h5>
+                <p>We offer recipes for a wide range of delicacies. We major on:
+                    <ul>
+                        <li>Breakfast Recipes</li>
+                        <li>Lunch Recipes</li>
+                        <li>Dinner Recipes</li>
+                        <li>African Dishes Recipes</li>
+                        <li>Western Dishes Recipes</li>
+                    </ul>
+                </p>
 
-        <div class="landing-col col-md-6">
-            <img class="mySlides" src="/image/images.jpeg" class="img-fluid" style="width: 100%;">
-            <img class="mySlides" src="/image/laz.jpeg" class="img-fluid" style="width: 100%;">
-            <img class="mySlides" src="/image/log-in-background.jpg" class="img-fluid" style="width: 100%;">
-            <img class="mySlides" src="/image/lazania.jpg" class="img-fluid" style="width: 100%;">           
+            </div>
+
+        </div>
+
+        <div class="carousel">
+
+            <img class="mySlides " src="/Watamu-Recipes/image/Lasagne-Pasta_10845.jpg " class="img-fluid " style="width: 640px;height: 424px ; ">
+            <img class="mySlides " src="/Watamu-Recipes/image/1.jpg " class="img-fluid " style="width: 640px;height: 424px; ">
+            <img class="mySlides " src="/Watamu-Recipes/image/2.jpg " class="img-fluid " style="width: 640px;;height: 424px; ">
+            <img class="mySlides " src="/Watamu-Recipes/image/3.jpeg " class="img-fluid " style="width: 640px;;height: 424px; ">
+            <img class="mySlides " src="/Watamu-Recipes/image/3.webp " class="img-fluid " style="width: 640px;;height: 424px;; ">
+            <img class="mySlides " src="/Watamu-Recipes/image/4.jpg " class="img-fluid " style="width:640px;;height: 424px; ">
+            <img class="mySlides " src="/Watamu-Recipes/image/5.jpg " class="img-fluid " style="width: 640px;;height: 424px;; ">
+            <img class="mySlides " src="/Watamu-Recipes/image/6.jpg " class="img-fluid " style="width: 640px;;height: 424px;; ">
+
+        </div>
+
     </div>
-
     </div>
-
     <script>
-        var myIndex=0;
+        var myIndex = 0;
         carousel();
+
         function carousel() {
-        var i;
-        var x=document.getElementsByClassName("mySlides");
-        for (i=0; i < x.length; i++) {
-            x[i].style.display="none";
-        }
-        myIndex++;
-        if(myIndex>x.length){myIndex=1}
-        x[myIndex-1].style.display="block";
-        setTimeout(carousel, 3000);
+            var i;
+            var x = document.getElementsByClassName("mySlides ");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block ";
+            setTimeout(carousel, 3000);
         }
     </script>
+
+
+
+
+
+
 </body>
+
 </html>
