@@ -5,8 +5,41 @@
 
 body{
     background: black;
+    text-transform: capitalize;
+}
+
+body p{
+    text-transform: none;
+}
+
+body h5{
+    color: black;
+}
+
+.healthiest li{
+    background: #28a745;
 }
 
 h1{
     color: #e74c3c;
 }
+
+button{
+    text-transform: capitalize;
+}
+
+.card{
+    box-shadow: 5px 5px 15px #e74c3c;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+.col-md-4:hover{
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #9e9e9e;
+
+}
+
