@@ -1,0 +1,41 @@
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-style: solid;   
+}
+i{
+    font-style: normal;
+    font-family: fontAwesome;
+    font-size: medium;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+input{
+    border: none;
+    margin-top: 4px;
+    padding: 6px;
+    width: 500px;
+    position: relative;
+}
+
+.container button {
+    float: right;
+    padding: 6px 10px;
+    text-align: left;
+    height: 100%;
+    font-size: 17px;
+    border: none;
+    background: black;
+}
+.container button:hover{
+    background: #ccc;
+}
+@media screen and (max-width: 540px){
+    .container{
+        float: none;
+    }
+}
+
