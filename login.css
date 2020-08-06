@@ -1,8 +1,18 @@
 body{
-    align-items: center;
-    background: url("https://hipwallpaper.com/view/OG1FLx");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../Watamu-Recipes/image/log-in-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#forms{
-    padding-left: 100px;
-    padding-top: 70px;
+
+form button:hover, form button:active{
+    background: green;
+}
+
+.message{
+    font-size: 12px;
+    color: aliceblue;
+}
+
+.login-form{
+    display: none;
 }
