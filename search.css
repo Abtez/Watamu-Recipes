@@ -3,35 +3,39 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
+    border-style: solid;   
 }
 i{
     font-style: normal;
     font-family: fontAwesome;
     font-size: medium;
     padding: 10px;
-    background: rgb(50,50,50);
     color: white;
-    border-radius: 50%;
-    left: -59px;
-    top: 1px;
-    transition-duration: .5s;
     position: relative;
 }
 input{
-    padding: 20px;
-    border: medium;
-    border-radius: 50px;
-    width: 15px;
-    transition-duration: .5s;
+    border: none;
+    margin-top: 4px;
+    padding: 6px;
+    width: 500px;
     position: relative;
 }
-div.container:hover input, div.container input:focus{
-    width: 300px;
-    border-radius: 50px;
+
+.container button {
+    float: right;
+    padding: 6px 10px;
+    text-align: left;
+    height: 100%;
+    font-size: 17px;
+    border: none;
+    background: black;
 }
-div.container:hover input{
-    box-shadow: 0 0 5px 0 black;
+.container button:hover{
+    background: #ccc;
 }
-div.container:input:focus{
-    box-shadow: 0 0 10px 0 black;
+@media screen and (max-width: 540px){
+    .container{
+        float: none;
+    }
 }
+
