@@ -7,5 +7,31 @@
 i{
     font-style: normal;
     font-family: fontAwesome;
-
+    font-size: medium;
+    padding: 10px;
+    background: rgb(50,50,50);
+    color: white;
+    border-radius: 50%;
+    left: -59px;
+    top: 1px;
+    transition-duration: .5s;
+    position: relative;
+}
+input{
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    width: 15px;
+    transition-duration: .5s;
+    position: relative;
+}
+div.container:hover input, div.container input:focus{
+    width: 300px;
+    border-radius: 50px;
+}
+div.container:hover input{
+    box-shadow: 0 0 5px 0 black;
+}
+div.container:input:focus{
+    box-shadow: 0 0 10px 0 black;
 }
