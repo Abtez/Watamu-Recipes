@@ -1,3 +1,5 @@
+/*******healthiest*******/
+
 $(document).ready(function(){
     $("button#bowl").click(function(){
         $("#brekporg").toggle();
@@ -20,5 +22,16 @@ $(document).ready(function(){
         $("li#dinprep").toggle();
     });
 });
-    
+   
+/*******breakfast*******/
+
+$(document).ready(function(){
+    $("#btn-oat").click(function(){
+        $("#oatingr").toggle()
+    })
+    $("#btn-oatprep").click(function(){
+        $("#oatprep").toggle()
+    })
+})
+
   
