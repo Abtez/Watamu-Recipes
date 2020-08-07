@@ -20,6 +20,10 @@ signupform.addEventListener('submit', (e) => {
         messages.push('password cannnot be password')
     }
 
+    if (password.value.length >= 16) {
+        messages.push('Password should not be more than 15 characters')
+    }
+
     if (password.value != passwordconfirm.value) {
         messages.push('Passwords do not match')
     }
@@ -29,7 +33,4 @@ signupform.addEventListener('submit', (e) => {
     errorDisplay.innerText = messages.join(', ')
     }
 
-});
-loginform.addEventListener('submit',  (f)=> {
-    f.preventDefault();
 });
