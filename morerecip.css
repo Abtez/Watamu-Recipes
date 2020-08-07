@@ -17,8 +17,8 @@ body h5{
     color: black;
 }
 
-.healthiest li{
-
+h5:hover{
+    color: #28a745;
 }
 
 h2{
@@ -42,7 +42,7 @@ a{
     overflow: hidden;
 }
 
-.col-md-4:hover{
+.col-md-4:hover, .col-md-3:hover{
     background: #e74d3c60;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #9e9e9e;
